@@ -1,72 +1,105 @@
 public class Main {
     public static void main(String[] args) {
-        // Задача 2: Увеличиваем значения переменных на 4
-        var dog = 8.0;
-        var cat = 3.6;
-        var paper = 763789;
+        // Задача 1
+        int intValue = 569;
+        byte byteValue = 67;
+        short shortValue = 27897;
+        long longValue = 987678965549L;
+        float floatValue = 2.786f;
+        double doubleValue = 27.12;
 
-        dog += 4; // Увеличиваем dog на 4
-        cat += 4; // Увеличиваем cat на 4
-        paper += 4; // Увеличиваем paper на 4
+        System.out.println("Значение переменной intValue с типом int равно " + intValue);
+        System.out.println("Значение переменной byteValue с типом byte равно " + byteValue);
+        System.out.println("Значение переменной shortValue с типом short равно " + shortValue);
+        System.out.println("Значение переменной longValue с типом long равно " + longValue);
+        System.out.println("Значение переменной floatValue с типом float равно " + floatValue);
+        System.out.println("Значение переменной doubleValue с типом double равно " + doubleValue);
 
-        System.out.println("Новое значение переменной dog: " + dog);
-        System.out.println("Новое значение переменной cat: " + cat);
-        System.out.println("Новое значение переменной paper: " + paper);
+        // Задача 3
+        int ludmilaStudents = 23;
+        int annaStudents = 27;
+        int ekaterinaStudents = 30;
+        int totalSheets = 480;
 
-        // Задача 3: Уменьшаем значения переменных
-        dog -= 3.5; // Уменьшаем dog на 3.5
-        cat -= 1.6; // Уменьшаем cat на 1.6
-        paper -= 7639; // Уменьшаем paper на 7639
+        int totalStudents = ludmilaStudents + annaStudents + ekaterinaStudents;
+        int sheetsPerStudent = totalSheets / totalStudents;
 
-        System.out.println("Новое значение переменной dog: " + dog);
-        System.out.println("Новое значение переменной cat: " + cat);
-        System.out.println("Новое значение переменной paper: " + paper);
+        System.out.println("На каждого ученика рассчитано " + sheetsPerStudent + " листов бумаги");
 
-        // Задача 4: Работа с переменной friend
-        var friend = 19;
-        System.out.println("Изначальное значение friend: " + friend);
+        // Задача 4
+        int bottlesPerTwoMinutes = 16;
+        int minutesIn20 = 20;
+        int minutesInDay = 1440; // 24 * 60 = 1440
+        int minutesIn3Days = 3 * minutesInDay;
+        int minutesInMonth = 30 * minutesInDay;
 
-        friend += 2; // Увеличиваем friend на 2
-        System.out.println("Значение friend после увеличения на 2: " + friend);
+        int bottlesIn20Minutes = (bottlesPerTwoMinutes / 2) * minutesIn20;
+        int bottlesInDay = (bottlesPerTwoMinutes / 2) * minutesInDay;
+        int bottlesIn3Days = (bottlesPerTwoMinutes / 2) * minutesIn3Days;
+        int bottlesInMonth = (bottlesPerTwoMinutes / 2) * minutesInMonth;
 
-        friend /= 7; // Делим friend на 7
-        System.out.println("Значение friend после деления на 7: " + friend);
+        System.out.println("За 20 минут машина произвела " + bottlesIn20Minutes + " штук бутылок");
+        System.out.println("За сутки машина произвела " + bottlesInDay + " штук бутылок");
+        System.out.println("За 3 дня машина произвела " + bottlesIn3Days + " штук бутылок");
+        System.out.println("За 1 месяц машина произвела " + bottlesInMonth + " штук бутылок");
 
-        // Задача 5: Работа с переменной frog
-        var frog = 3.5;
-        System.out.println("Изначальное значение frog: " + frog);
+        // Задача 5
+        int totalClasses = 30; // Сумма классов
+        int whitePaintPerClass = 2;
+        int brownPaintPerClass = 4;
+        int totalWhitePaint = totalClasses * whitePaintPerClass;
+        int totalBrownPaint = totalClasses * brownPaintPerClass;
 
-        frog *= 10; // Увеличиваем frog в 10 раз
-        System.out.println("Значение frog после увеличения на 10 раз: " + frog);
+        System.out.println("В школе, где " + totalClasses + " классов, нужно " + totalWhitePaint +
+                " банок белой краски и " + totalBrownPaint + " банок коричневой краски");
 
-        frog /= 3.5; // Делим frog на 3.5
-        System.out.println("Значение frog после деления на 3.5: " + frog);
+        // Задача 6
+        int bananasQuantity = 5;
+        int bananaWeight = 80;
+        int milkVolume = 200;
+        int milkWeightPer100ml = 105;
+        int iceCreamQuantity = 2;
+        int iceCreamWeight = 100;
+        int eggsQuantity = 4;
+        int eggWeight = 70;
 
-        frog += 4; // Добавляем 4 к frog
-        System.out.println("Значение frog после добавления 4: " + frog);
+        int totalWeightInGrams = (bananasQuantity * bananaWeight) +
+                (milkVolume / 100 * milkWeightPer100ml) +
+                (iceCreamQuantity * iceCreamWeight) +
+                (eggsQuantity * eggWeight);
+        double totalWeightInKg = totalWeightInGrams / 1000.0;
 
-        // Задача 6: Общая масса двух боксеров
-        var boxer1Weight = 78.2; // Масса первого боксера
-        var boxer2Weight = 82.7; // Масса второго боксера
+        System.out.println("Общий вес завтрака: " + totalWeightInGrams + " грамм (" + totalWeightInKg + " кг)");
 
-        var totalWeight = boxer1Weight + boxer2Weight; // Общая масса
-        System.out.println("Общая масса двух боксеров: " + totalWeight);
+        // Задача 7
+        int weightToLoseInKg = 7;
+        int lossPerDayMin = 250; // грамм
+        int lossPerDayMax = 500; // грамм
 
-        var weightDifference = boxer2Weight - boxer1Weight; // Разница между массами
-        System.out.println("Разница между массами боксеров: " + weightDifference);
+        int daysForMinLoss = (weightToLoseInKg * 1000) / lossPerDayMax;
+        int daysForMaxLoss = (weightToLoseInKg * 1000) / lossPerDayMin;
+        double averageDaysToLoseWeight = (daysForMinLoss + daysForMaxLoss) / 2.0;
 
-        // Задача 7: Остаток от деления
-        var remainder = boxer2Weight % boxer1Weight; // Остаток от деления
-        System.out.println("Остаток от деления массы второго боксера на массу первого: " + remainder);
-        // Задача 8: Арифметические функции
-        var totalHours = 640; // Общее количество часов работы
-        var hoursPerEmployee = 8; // Часы работы на одного сотрудника
-        var totalEmployees = totalHours / hoursPerEmployee; // Общее количество работников
-        System.out.println("Всего работников в компании — " + totalEmployees + " человек");
+        System.out.println("На похудение при 250 граммах в день уйдет " + daysForMinLoss + " дней.");
+        System.out.println("На похудение при 500 граммах в день уйдет " + daysForMaxLoss + " дней.");
+        System.out.println("В среднем потребуется " + averageDaysToLoseWeight + " дней для достижения результата.");
 
-        var additionalEmployees = 94; // Дополнительные работники
-        var newTotalEmployees = totalEmployees + additionalEmployees; // Новое общее количество работников
-        var newTotalHours = newTotalEmployees * hoursPerEmployee; // Часы работы для нового количества работников
-        System.out.println("Если в компании работает " + newTotalEmployees + " человек, то всего " + newTotalHours + " часов работы может быть поделено между сотрудниками");
+        // Задача 8
+        double mashaSalary = 67760;
+        double denisSalary = 83690;
+        double kristinaSalary = 76230;
+
+        // Увеличение зарплаты на 10%
+        double mashaNewSalary = mashaSalary * 1.1;
+        double denisNewSalary = denisSalary * 1.1;
+        double kristinaNewSalary = kristinaSalary * 1.1;
+
+        double mashaAnnualIncomeIncrease = (mashaNewSalary * 12) - (mashaSalary * 12);
+        double denisAnnualIncomeIncrease = (denisNewSalary * 12) - (denisSalary * 12);
+        double kristinaAnnualIncomeIncrease = (kristinaNewSalary * 12) - (kristinaSalary * 12);
+
+        System.out.println("Маша теперь получает " + mashaNewSalary + " рублей. Годовой доход вырос на " + mashaAnnualIncomeIncrease + " рублей.");
+        System.out.println("Денис теперь получает " + denisNewSalary + " рублей. Годовой доход вырос на " + denisAnnualIncomeIncrease + " рублей.");
+        System.out.println("Кристина теперь получает " + kristinaNewSalary + " рублей. Годовой доход вырос на " + kristinaAnnualIncomeIncrease + " рублей.");
     }
 }
