@@ -89,7 +89,7 @@ public class Main {
         double denisSalary = 83690;
         double kristinaSalary = 76230;
 
-        // Увеличение зарплаты на 10%
+        // Увеличение зп на 10%
         double mashaNewSalary = mashaSalary * 1.1;
         double denisNewSalary = denisSalary * 1.1;
         double kristinaNewSalary = kristinaSalary * 1.1;
