@@ -68,15 +68,13 @@ public class Main {
         } else {
             System.out.println("Вагон уже полностью забит.");
         }
-
-        // Задача 7
+        // Зaдaчa 7
         System.out.print("Введите первое число: ");
         int one = scanner.nextInt();
         System.out.print("Введите второе число: ");
         int two = scanner.nextInt();
         System.out.print("Введите третье число: ");
         int three = scanner.nextInt();
-
         if (one >= two && one >= three) {
             System.out.println("Наибольшее число: " + one);
         } else if (two >= one && two >= three) {
@@ -84,7 +82,6 @@ public class Main {
         } else {
             System.out.println("Наибольшее число: " + three);
         }
-
         scanner.close();
     }
 }
